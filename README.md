@@ -3,17 +3,8 @@
 | description | url |
 | --- | --- |
 | LaTeX Mathematics | https://en.wikibooks.org/wiki/LaTeX/Mathematics|
+| github markdown | https://github.github.com/gfm/ |
 
-Here is a simple flow chart:
+When you put `$\sqrt{3}$`, you get $\sqrt{3}$
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
-
-some line
-
-#### some head
+when you put `$$\sqrt{3}$$`, you get $$\sqrt{3}$$
