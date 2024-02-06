@@ -18,6 +18,10 @@
 |       | 6.830   |        |              |         |                  |              |          |
 |       |         |        |              |         |                  |              |          |
 
+### books
+| Title | Authors |
+| ---- | ---- |
+| [The Practice of Programming](notes/book_TPP.md) | Brian W. kernighan, Rob Pike |
 
 
 ### references
