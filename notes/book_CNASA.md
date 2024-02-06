@@ -1,5 +1,7 @@
 # Computer Networks: A Systems Approach
 
+从问题，需求，架构，性能，扩展等角度，用网络系统设计作为例子来讨论系统设计的一些原则和概念。比如通过分层的方式来模块化。
+
 site: https://book.systemsapproach.org/
 
 source: https://github.com/SystemsApproach
