@@ -22,6 +22,7 @@
 | Title | Authors |
 | ---- | ---- |
 | [The Practice of Programming](notes/book_TPP.md) | Brian W. kernighan, Rob Pike |
+| [Computer Networks A Systems Approach 6th](notes/book_CNASA.md) | Larry Peterson & Bruce Davie |
 
 
 ### references
