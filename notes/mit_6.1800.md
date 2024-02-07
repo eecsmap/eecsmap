@@ -19,4 +19,9 @@
 
 系统相关的课程太多，时间太少，各种lab也很容易让学生掉在细节里看不到big picture, big ideas.
 
+> System abstractions fall in one of three categories:
+> - interpreters
+> - memory
+> - communication links
 
+可以理解成计算，存储，以及通信。这里的interpreters可以参考ISA如何把指令集翻译成机器操作来执行的。
