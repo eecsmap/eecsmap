@@ -26,6 +26,7 @@
 | [Crafting Interpreters](notes/book_CraftingInterpreters.md) | Robert Nystrom |
 | [Designing Data-Intensive Applications](notes/book_DDIA.md) | |
 | [Operating Systems: Three Easy Pieces](notes/book_OSTEP.md) | |
+| [Haskell Programming from first principles](notes/book_Haskell.md) | |
 
 
 ### references
