@@ -13,5 +13,5 @@ docker run -it --rm haskell
 Or use https://play.haskell.org/
 
 Ref:
-	• https://hub.docker.com/_/haskell
-	• https://play.haskell.org/
+* https://hub.docker.com/_/haskell
+* https://play.haskell.org/
