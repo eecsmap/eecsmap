@@ -15,3 +15,16 @@ Or use https://play.haskell.org/
 Ref:
 * https://hub.docker.com/_/haskell
 * https://play.haskell.org/
+
+To run a program in a file.
+
+```
+cat <<eof > test.hs
+sayHello :: String -> IO()
+sayHello x = putStrLn("hello, " ++ x ++ "!")
+eof
+docker run -it -v .:/usr/src --rm haskell
+ghci> :load test.hs
+ghci> sayHello "friend"
+hello, friend!
+```
