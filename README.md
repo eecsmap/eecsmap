@@ -28,6 +28,10 @@
 | [Operating Systems: Three Easy Pieces](notes/book_OSTEP.md) | |
 | [Haskell Programming from first principles](notes/book_Haskell.md) | |
 
+### People
+| Name | Site |
+| ---- | ---- |
+| Fabrice Bellard | https://bellard.org/ |
 
 ### references
 
