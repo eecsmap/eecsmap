@@ -27,6 +27,7 @@
 | [Designing Data-Intensive Applications](notes/book_DDIA.md) | |
 | [Operating Systems: Three Easy Pieces](notes/book_OSTEP.md) | |
 | [Haskell Programming from first principles](notes/book_Haskell.md) | |
+| [Think Stat2](https://github.com/AllenDowney/ThinkStats2) | Allen B. Downey |
 
 ### People
 | Name | Site |
