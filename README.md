@@ -16,7 +16,7 @@
 |       | 6.828   |        |              |         |                  |              | math185  |
 |       | 6.829   |        |              |         |                  |              |          |
 |       | 6.830   |        |              |         |                  |              |          |
-|       |         |        |              |         |                  |              |          |
+|       | [KENSv3](https://github.com/ANLAB-KAIST/KENSv3/wiki/Getting-Started:-CLI-(macOS))        |        |              |         |                  |              |          |
 
 ### books
 | Title | Authors |
