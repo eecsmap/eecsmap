@@ -71,3 +71,7 @@ In another terminal
 ```
 riscv64-elf-gdb
 ```
+
+![QQ_1724659055078](https://github.com/user-attachments/assets/69c9be93-738c-4103-a401-e9ff8edd4197)
+
+
