@@ -35,7 +35,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-For some reason gdb is not included in riscv-tools. And I don't want to build the tools from source. So I gave it a try to brew:
+For some reason gdb is not included in riscv-tools. And I don't want to build the tools from source. So I gave it a try using brew:
 
 ```
 brew install riscv64-elf-gdb
@@ -69,6 +69,7 @@ make qemu-gdb
 
 In another terminal
 ```
+cd xv6-labs-2024
 riscv64-elf-gdb
 ```
 
