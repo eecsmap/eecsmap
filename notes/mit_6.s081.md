@@ -77,4 +77,83 @@ riscv64-elf-gdb
 
 To quit the qemu, press `ctrl-a` then `x`.
 
+# Walk through the instructions
+
+```
+(gdb) x/16i $pc
+=> 0x1000:      auipc   t0,0x0
+   0x1004:      addi    a2,t0,40
+   0x1008:      csrr    a0,mhartid
+   0x100c:      ld      a1,32(t0)
+   0x1010:      ld      t0,24(t0)
+   0x1014:      jr      t0
+   0x1018:      unimp
+   0x101a:      .insn   2, 0x8000
+   0x101c:      unimp
+   0x101e:      unimp
+   0x1020:      unimp
+   0x1022:      .insn   2, 0x87e0
+   0x1024:      unimp
+   0x1026:      unimp
+   0x1028:      fnmadd.s        ft6,ft4,fs4,fs1,unknown
+   0x102c:      unimp
+(gdb) info reg
+ra             0x0      0x0
+sp             0x0      0x0
+gp             0x0      0x0
+tp             0x0      0x0
+t0             0x0      0
+t1             0x0      0
+t2             0x0      0
+fp             0x0      0x0
+s1             0x0      0
+a0             0x0      0
+a1             0x0      0
+a2             0x0      0
+a3             0x0      0
+a4             0x0      0
+a5             0x0      0
+a6             0x0      0
+a7             0x0      0
+s2             0x0      0
+s3             0x0      0
+s4             0x0      0
+s5             0x0      0
+s6             0x0      0
+s7             0x0      0
+s8             0x0      0
+s9             0x0      0
+s10            0x0      0
+s11            0x0      0
+t3             0x0      0
+t4             0x0      0
+t5             0x0      0
+t6             0x0      0
+pc             0x1000   0x1000
+```
+As we can see, all registers are zero except `pc`.
+
+Why do we start from pc 0x1000?
+
+Let's look at the exact command executed when we run `make qemu` or `make qemu-gdb`
+
+```
+qemu-system-riscv64 -machine virt -bios none -kernel kernel/kernel -m 128M -smp 3 -nographic -global virtio-mmio.force-legacy=false -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S -gdb tcp::25501
+```
+We see it is using machine `virt`. And read the code related to this `virt` machine: https://github.com/qemu/qemu/blob/afaee42f777bc359db95f692804f7fc7e12c0c02/hw/riscv/virt.c#L72
+
+We can tell it is the boot rom of the `virt` machine, and the very first data structure is the `reset vector`.
+The content is defined in:
+
+https://github.com/qemu/qemu/blob/afaee42f777bc359db95f692804f7fc7e12c0c02/hw/riscv/boot.c#L397
+
+compare with:
+
+```
+(gdb) x/16x $pc
+0x1000: 0x00000297      0x02828613      0xf1402573      0x0202b583
+0x1010: 0x0182b283      0x00028067      0x80000000      0x00000000
+0x1020: 0x87e00000      0x00000000      0x4942534f      0x00000000
+0x1030: 0x00000002      0x00000000      0x80000000      0x00000000
+```
 
