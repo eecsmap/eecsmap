@@ -8,7 +8,7 @@
 | cs70  | cs168   |        |              | ee127   |                  |              | math54   |
 | ee16a | cs169   |        |              |         |                  |              | math55   |
 | ee16b | [cs152](notes/ucb_cs152.md)   |        |              |         |                  |              | math110  |
-|       | eecs151 |        |              |         |                  |              | math128a |
+|       | [eecs151](notes/ucb_eecs151.md) |        |              |         |                  |              | math128a |
 |       | [6.s081](notes/mit_6.s081.md)  |        |              |         |                  |              |          |
 |       | [6.033/6.1800](notes/mit_6.1800.md)   |        |              |         |                  |              | math113  |
 |       | 6.824   |        |              |         |                  |              | math104  |
