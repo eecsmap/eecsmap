@@ -88,6 +88,79 @@ set disassemble-next-line auto
 set riscv use-compressed-breakpoints yes
 ```
 
+# project meta
+
+```
+engineer@xv6-labs-2024 % find kernel -name '*.S' -o -name '*.c' -o -name '*.h' | xargs wc -l | sort -n
+       5 kernel/fcntl.h
+       9 kernel/spinlock.h
+      10 kernel/sleeplock.h
+      10 kernel/types.h
+      11 kernel/stat.h
+      12 kernel/buf.h
+      15 kernel/param.h
+      21 kernel/entry.S
+      22 kernel/syscall.h
+      40 kernel/file.h
+      42 kernel/elf.h
+      42 kernel/swtch.S
+      45 kernel/main.c
+      47 kernel/plic.c
+      55 kernel/sleeplock.c
+      59 kernel/memlayout.h
+      60 kernel/fs.h
+      64 kernel/kernelvec.S
+      66 kernel/start.c
+      82 kernel/kalloc.c
+      93 kernel/sysproc.c
+      96 kernel/virtio.h
+     107 kernel/proc.h
+     107 kernel/string.c
+     110 kernel/spinlock.c
+     130 kernel/pipe.c
+     147 kernel/syscall.c
+     151 kernel/trampoline.S
+     153 kernel/bio.c
+     166 kernel/exec.c
+     178 kernel/printf.c
+     182 kernel/file.c
+     189 kernel/defs.h
+     191 kernel/uart.c
+     192 kernel/console.c
+     218 kernel/trap.c
+     236 kernel/log.c
+     327 kernel/virtio_disk.c
+     378 kernel/riscv.h
+     451 kernel/vm.c
+     505 kernel/sysfile.c
+     695 kernel/proc.c
+     697 kernel/fs.c
+    6416 total
+engineer@xv6-labs-2024 % find user -name '*.S' -o -name '*.c' -o -name '*.h' | xargs wc -l | sort -n 
+      14 user/zombie.c
+      15 user/ln.c
+      17 user/kill.c
+      19 user/echo.c
+      23 user/mkdir.c
+      23 user/rm.c
+      28 user/initcode.S
+      43 user/cat.c
+      43 user/user.h
+      49 user/stressfs.c
+      54 user/init.c
+      55 user/wc.c
+      56 user/forktest.c
+      87 user/ls.c
+      90 user/umalloc.c
+     107 user/grep.c
+     147 user/ulib.c
+     157 user/printf.c
+     351 user/grind.c
+     494 user/sh.c
+    3118 user/usertests.c
+    4990 total
+```
+
 # Walk through the instructions
 
 ```
