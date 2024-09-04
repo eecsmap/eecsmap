@@ -77,6 +77,17 @@ riscv64-elf-gdb
 
 To quit the qemu, press `ctrl-a` then `x`.
 
+# GDB tips
+Some from the .gdbinit file under the root of the project.
+```
+set confirm off
+set architecture riscv:rv64
+target remote 127.0.0.1:25501
+symbol-file kernel/kernel
+set disassemble-next-line auto
+set riscv use-compressed-breakpoints yes
+```
+
 # Walk through the instructions
 
 ```
@@ -355,5 +366,6 @@ csrrs
         U imm   :1111000_10100_00000_010_01010_1110011  -247455744
         J imm   :1_1110001010_0_00000010_01010_1110011  -1038572
 ```
+
 
 
