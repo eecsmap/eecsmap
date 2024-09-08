@@ -115,8 +115,12 @@ Instructions covered:
 * U (imm31-12|rd|opcode5|11): auipc, lui
 * J (imm20,imm10-1,imm11,imm19-12|rd|opcode5|11): jal
 
-(J reuses the fields from B and U).
-(rs1 is used as base in both load and store).
+notes:
+
+* J reuses the fields from B and U.
+* rs1 is used as base in both load and store
+* JALR is I style.
+* load has sign/unsign.
 
 Following notes are based on the [2022 fall FPGA project](https://github.com/eecsmap/fpga_project_skeleton_fa22).
 
