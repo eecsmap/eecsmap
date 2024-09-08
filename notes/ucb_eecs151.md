@@ -15,3 +15,7 @@ And for the reading side, we can have:
 * input: read_enable
 * output: data_out
 * output: is_empty
+
+# FPGA Project
+
+Following notes are based on the [2022 fall FPGA project](https://github.com/eecsmap/fpga_project_skeleton_fa22).
