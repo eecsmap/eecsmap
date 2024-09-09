@@ -121,6 +121,7 @@ notes:
 * rs1 is used as base in both load and store
 * JALR is I style.
 * load has sign/unsign.
+* SUB and SRA, SRAI use a flag bit in funct7.
 
 Following notes are based on the [2022 fall FPGA project](https://github.com/eecsmap/fpga_project_skeleton_fa22).
 
