@@ -60,6 +60,16 @@ git config --global http.postBuffer 524288000
 git push -u github
 ```
 
+# sync origin to github
+
+```
+git branch -avv
+git fetch --all --prune
+git checkout riscv
+git rebase origin/riscv
+git push github riscv
+```
+
 # verify
 In one terminal
 ```
